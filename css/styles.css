@@ -1,0 +1,93 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  background-color: #ffffff;
+  color: #434455;
+}
+
+h2,
+h3 {
+  color: #2e2f42;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.16;
+}
+.web {
+  color: #4d5ae5;
+}
+.navigation:hover,
+.navigation:focus {
+  color: #4d5ae5;
+}
+.navigation {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.contacts:hover,
+.contacts:focus {
+  color: #4d5ae5;
+}
+.hero-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.page-title {
+  background-color: #2e2f42;
+}
+.button {
+  background-color: #4d5ae5;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.benefits-list .title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.team {
+  background-color: #f4f4fd;
+}
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+}
+
+.team .name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.portfolio .section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+.portfolio .name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
