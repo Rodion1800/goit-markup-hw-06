@@ -80,10 +80,6 @@ a {
 .web {
   color: #4d5ae5;
 }
-.navigation:hover,
-.navigation:focus {
-  color: #4d5ae5;
-}
 
 .site-nav {
   display: flex;
@@ -97,10 +93,16 @@ a {
 .nav-list .item:not(:last-child) {
   margin-right: 40px;
 }
-.navigation {
-  position: relative;
-  padding: 5px 0 5px 0;
-  color: #404bbf;
+.navigation-studio::after {
+  content: '';
+  display: block;
+  background-color: #404bbf;
+  height: 4px;
+  border-radius: 2px;
+  bottom: -1px;
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
 }
 .navigation::after {
   content: '';
@@ -108,20 +110,23 @@ a {
   background-color: #404bbf;
   height: 4px;
   border-radius: 2px;
-  bottom: -1px; 
+  bottom: -1px;
   position: absolute;
   visibility: hidden;
   width: 100%;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navigation:hover::after,
 .navigation:focus::after {
   background-color: #404bbf;
   visibility: visible;
-  
-};
 }
+
+.navigation-studio:hover::after,
+.navigation-studio:focus::after {
+  background-color: #404bbf;
+  visibility: visible;
+}
+
 .navigation:active::after {
   background-color: #404bbf;
   visibility: visible;
@@ -131,13 +136,29 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  position: relative;
+  padding: 5px 0 5px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation-studio {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  position: relative;
+  padding: 5px 0 5px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #404bbf;
+}
+
+.navigation:hover,
+.navigation:focus {
+  color: #4d5ae5;
 }
 
 .contacts {
   color: #434455;
   margin-left: auto;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts:hover,
 .contacts:focus {
@@ -191,6 +212,7 @@ a {
   min-width: 169px;
   border: none;
   border-radius: 4px;
+  transition: background-color #4d5ae5 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .benefits {
