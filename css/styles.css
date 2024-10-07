@@ -326,9 +326,7 @@ a {
 }
 
 .icon {
-  fill: #fff;
-  width: 16px;
-  height: 16px;
+  fill: #f4f4fd;
 }
 
 .social-link {
@@ -343,7 +341,7 @@ a {
 }
 .social-link:hover,
 .social-link:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 .social-link:hover .icon,
