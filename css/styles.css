@@ -212,7 +212,7 @@ a {
   min-width: 169px;
   border: none;
   border-radius: 4px;
-  transition: background-color #4d5ae5 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .benefits {
@@ -232,7 +232,18 @@ a {
   padding-top: 8px;
 }
 
-.benefits-item::before {
+.benefits-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+}
+
+/* .benefits-item::before {
   content: '';
   display: block;
   height: 112px;
@@ -260,7 +271,7 @@ a {
 .icon-astronaut::before {
   background-image: url(../images//astronaut.svg);
   background-size: 64px 64px;
-}
+} */
 
 .benefits-item:not(:last-child) {
   margin-right: 24px;
@@ -345,10 +356,6 @@ a {
   background-color: #404bbf;
 }
 
-.social-link:hover .icon,
-.social-link:focus .icon {
-  fill: #fff;
-}
 .portfolio .section-title {
   font-size: 36px;
   line-height: 1.11;
