@@ -358,6 +358,7 @@ a {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 
 .portfolio-container {
@@ -411,6 +412,13 @@ a {
 .portfolio-item:hover .overlay-text {
   transform: translateY(0);
 }
+.portfolio-discription {
+  box-shadow: 0px 2px 1px 0px #2e2f4214;
+  background-color: #ffffff;
+  padding: 32px 0 32px 16px;
+  height: 120px;
+}
+
 .footer {
   background-color: #2e2f42;
   padding: 100px 0 100px;
@@ -493,11 +501,4 @@ a {
 .footer-text {
   max-width: 264px;
   margin-top: 10px;
-}
-.portfolio-discription {
-  box-shadow: 0px 2px 1px 0px #2e2f4214;
-  background-color: #ffffff;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  height: 120px;
 }
