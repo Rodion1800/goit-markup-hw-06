@@ -485,18 +485,18 @@
         <button class="close-btn" type="button">X</button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form" action="">
-          <label class="modal-label" for="name"
-            >Name
-            <input type="text" name="name" id="name" required />
-          </label>
-          <label class="modal-label" for="tel"
-            >Phone
-            <input type="tel" name="tel" id="tel" required />
-          </label>
-          <label class="modal-label" for="mail"
-            >Email
-            <input type="mail" name="email" id="mail" required />
-          </label>
+          <div class="label-box">
+            <label class="modal-label" for="user-name">Name</label>
+            <div class="input-box">
+              <input
+                class="input-form"
+                type="text"
+                name="user-name"
+                id="user-name"
+                required
+              />
+            </div>
+          </div>
           <label class="modal-label-texarea" for="comment"
             >Comment
             <textarea
