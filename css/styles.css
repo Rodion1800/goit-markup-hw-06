@@ -490,29 +490,18 @@ a {
   margin-top: 10px;
 }
 
-.subscription-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.subscription-box {
-  text-align: left;
-}
-
 .subs-text {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 0;
   margin-bottom: 16px;
   color: #ffffff;
 }
 
 .input-container {
   display: flex;
-  align-items: center;
+  gap: 24px;
 }
 
 .email-input {
@@ -550,6 +539,8 @@ a {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  min-width: 165px;
+  height: 40px;
 }
 
 .subscribe-button:hover,
