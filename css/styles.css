@@ -452,7 +452,6 @@ a {
 
 .social-items-list-footer {
   display: flex;
-  margin-top: 8px;
   gap: 16px;
 }
 
@@ -535,12 +534,15 @@ a {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   min-width: 165px;
   height: 40px;
+}
+.icon-btn {
+  margin-left: 16px;
+  fill: #ffffff;
 }
 
 .subscribe-button:hover,
