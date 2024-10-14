@@ -737,7 +737,7 @@ a {
 .input-form:focus + .icon-modal {
   fill: #4d5ae5;
 }
-.close-btn:hover,
+.close-btn:hover + .icon-modal-btn,
 .close-btn:focus + .icon-modal-btn {
   fill: #ffffff;
 }
