@@ -737,8 +737,9 @@ a {
 .input-form:focus + .icon-modal {
   fill: #4d5ae5;
 }
-.icon-modal-btn {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.close-btn:hover,
+.close-btn:focus + .icon-modal-btn {
+  fill: #ffffff;
 }
 .icon-btn {
   margin-left: 16px;
