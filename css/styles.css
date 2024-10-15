@@ -178,12 +178,11 @@ a {
 }
 .page-title {
   text-align: center;
-  height: 600px;
+
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 188px 0;
   background-color: #2e2f42;
   background-image: linear-gradient(
       to bottom,
@@ -405,7 +404,6 @@ a {
   background-color: #2e2f42;
   padding: 100px 0 100px;
   height: auto;
-  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
