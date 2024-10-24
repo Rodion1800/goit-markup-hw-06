@@ -236,7 +236,6 @@ address {
     display: block;
     margin-left: auto;
     font-style: normal;
-    padding: 24px 0;
     margin-left: auto;
   }
   .nav-list {
@@ -259,8 +258,11 @@ address {
     padding: 24px 0;
     display: block;
   }
+  .navigation.studio {
+    color: #404bbf;
+  }
 
-  .navigation::after {
+  .navigation.studio::after {
     content: '';
     display: block;
     background-color: #404bbf;
@@ -268,7 +270,7 @@ address {
     border-radius: 2px;
     bottom: -1px;
     position: absolute;
-    visibility: hidden;
+    /* visibility: hidden; */
     width: 100%;
     transition: visibility 0s, 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -294,6 +296,8 @@ address {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .contacts-list {
     display: flex;
@@ -321,11 +325,21 @@ address {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/bg-mobil-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: #fff;
+}
+@media (min-resolution: 192dpi) {
+  .page-title {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-mobile-2x.jpg);
+  }
 }
 .hero-title {
   font-size: 36px;
@@ -351,14 +365,46 @@ address {
 @media (min-width: 768px) {
   .page-title {
     padding: 112px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-tablet-1x.jpg);
+  }
+  @media (min-resolution: 192dpi) {
+    .page-title {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg-tablet-2x.jpg);
+    }
   }
 }
 @media screen and (min-width: 1158px) {
   .page-title {
     padding: 188px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-desk-1x.jpg);
   }
   .hero-title {
     font-size: 56px;
+  }
+  @media (min-resolution: 192dpi) {
+    .page-title {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg-desk-2x.jpg);
+    }
   }
 }
 /* benefits */
@@ -402,10 +448,10 @@ address {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 24px;
-    margin: 0 auto;
+    gap: 72px 24px;
   }
   .benefits-item {
+    margin: 0;
     flex-basis: calc((100% - 24px) / 2);
   }
   .title {
@@ -452,7 +498,7 @@ address {
 /* team */
 .team {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .section-title {
   text-align: center;
@@ -522,12 +568,15 @@ address {
   .team-list {
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 24px;
+    gap: 64px 24px;
     max-width: 768px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 1158px) {
+  .team {
+    padding: 120px 0;
+  }
   .team-list {
     flex-wrap: nowrap;
   }
@@ -558,7 +607,7 @@ address {
 }
 
 .portfolio-item {
-  width: 360px;
+  width: 288px;
   margin-bottom: 48px;
   position: relative;
   overflow: hidden;
@@ -612,6 +661,9 @@ address {
   }
 }
 @media screen and (min-width: 1158px) {
+  .portfolio {
+    padding: 120px 0;
+  }
   .portfolio-item {
     width: calc((100% - 48px) / 3);
   }
@@ -752,19 +804,18 @@ address {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  max-width: 165px;
+  min-width: 165px;
   height: 40px;
   gap: 16px;
-  padding: 8px 24px;
 }
 @media (min-width: 768px) {
   .footer-container {
-    max-width: 768px;
+    max-width: 584px;
     align-items: flex-start;
-    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 24px;
+    gap: 72px 24px;
+    justify-content: unset;
   }
   .subscription-container {
     display: flex;
